@@ -50,6 +50,11 @@
   margin-bottom: 10px;
 }
 
+.icon {
+  font-size: 32px;
+}
+
+
 body {
   height: 100vh;
   background-color: rebeccapurple;

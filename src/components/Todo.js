@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
+import { HiCheck } from 'react-icons/hi';
+// import { IconName } from "react-icons/hi";
 
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
@@ -25,7 +27,7 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     <div
       className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
       key={index}
-      onClick={() => completeTodo(todo.id)}
+      
     >
       <div key={todo.id}>
         {todo.text}
@@ -33,11 +35,16 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
       <div className='icons'>
         <RiCloseCircleLine
           onClick={() => removeTodo(todo.id)}
-          className='delete-icon'
+          className='delete-icon icon'
         />
         <TiEdit
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
-          className='edit-icon'
+          className='edit-icon icon'
+        />
+        
+        <HiCheck 
+        onClick={() => completeTodo(todo.id)}
+        className="complete-icon icon"
         />
       </div>
     </div>

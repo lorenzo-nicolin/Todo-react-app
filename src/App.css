@@ -28,6 +28,33 @@
   color: #61dafb;
 }
 
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: wheat;
+  padding: 10px;
+}
+
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.todo-row.complete {
+  background-color: blue;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.todo-row {
+  background-color: aquamarine;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+body {
+  height: 100vh;
+  background-color: rebeccapurple;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

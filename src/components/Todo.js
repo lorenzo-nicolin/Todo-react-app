@@ -25,8 +25,9 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     <div
       className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
       key={index}
+      onClick={() => completeTodo(todo.id)}
     >
-      <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+      <div key={todo.id}>
         {todo.text}
       </div>
       <div className='icons'>

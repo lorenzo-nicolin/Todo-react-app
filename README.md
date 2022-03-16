@@ -1,3 +1,3 @@
-# Todo App With Just Reatc and CSS
+# Todo App With Just React js and CSS
 
 Nothing special, just using this small app for learning.
